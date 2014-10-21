@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8349309E195CCF980020AE3B /* libtrogz.game.lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83493092195CCF980020AE3B /* libtrogz.game.lib.a */; };
+		834930B4195CD0150020AE3B /* player.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930B2195CD0150020AE3B /* player.h */; };
+		834930B5195CD0150020AE3B /* player.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930B3195CD0150020AE3B /* player.mm */; };
+		834930B8195CD2CA0020AE3B /* playercharacter.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930B6195CD2CA0020AE3B /* playercharacter.h */; };
+		834930B9195CD2CA0020AE3B /* playercharacter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930B7195CD2CA0020AE3B /* playercharacter.mm */; };
+		834930BC195CDD890020AE3B /* game.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930BA195CDD890020AE3B /* game.h */; };
+		834930BD195CDD890020AE3B /* game.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930BB195CDD890020AE3B /* game.mm */; };
+		834930C0195CDF9E0020AE3B /* ability.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930BE195CDF9E0020AE3B /* ability.h */; };
+		834930C1195CDF9E0020AE3B /* ability.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930BF195CDF9E0020AE3B /* ability.mm */; };
+		834930C4195CDFCA0020AE3B /* constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930C2195CDFCA0020AE3B /* constraint.h */; };
+		834930C5195CDFCA0020AE3B /* constraint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930C3195CDFCA0020AE3B /* constraint.mm */; };
+		834930C81961D6F70020AE3B /* attribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930C61961D6F70020AE3B /* attribute.h */; };
+		834930C91961D6F70020AE3B /* attribute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930C71961D6F70020AE3B /* attribute.mm */; };
+		834930CC1961D7520020AE3B /* requirement.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930CA1961D7520020AE3B /* requirement.h */; };
+		834930CD1961D7520020AE3B /* requirement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930CB1961D7520020AE3B /* requirement.mm */; };
+		834930D01961DD160020AE3B /* specializationattribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930CE1961DD160020AE3B /* specializationattribute.h */; };
+		834930D11961DD160020AE3B /* specializationattribute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930CF1961DD160020AE3B /* specializationattribute.mm */; };
+		834930D41961E4E90020AE3B /* raceattribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930D21961E4E90020AE3B /* raceattribute.h */; };
+		834930D51961E4E90020AE3B /* raceattribute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930D31961E4E90020AE3B /* raceattribute.mm */; };
+		834930DC1961EBD70020AE3B /* levelattribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930DA1961EBD70020AE3B /* levelattribute.h */; };
+		834930DD1961EBD70020AE3B /* levelattribute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930DB1961EBD70020AE3B /* levelattribute.mm */; };
+		834930E0196259EF0020AE3B /* character.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930DE196259EF0020AE3B /* character.h */; };
+		834930E1196259EF0020AE3B /* character.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930DF196259EF0020AE3B /* character.mm */; };
+		834930E41962605D0020AE3B /* nonplayercharacter.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930E21962605D0020AE3B /* nonplayercharacter.h */; };
+		834930E51962605D0020AE3B /* nonplayercharacter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930E31962605D0020AE3B /* nonplayercharacter.mm */; };
+		834930E819626A730020AE3B /* attributecollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930E619626A730020AE3B /* attributecollection.h */; };
+		834930E919626A730020AE3B /* attributecollection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930E719626A730020AE3B /* attributecollection.mm */; };
+		834930ED19671BD40020AE3B /* AttributeCollectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 834930EC19671BD40020AE3B /* AttributeCollectionTest.m */; };
+		834930F319671F280020AE3B /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 834930F219671F280020AE3B /* libstdc++.dylib */; };
+		834930F619679CFE0020AE3B /* physicalattribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930F419679CFE0020AE3B /* physicalattribute.h */; };
+		834930F719679CFE0020AE3B /* physicalattribute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834930F519679CFE0020AE3B /* physicalattribute.mm */; };
+		834931011967A26B0020AE3B /* aggregateattribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 834930FF1967A26B0020AE3B /* aggregateattribute.h */; };
+		834931021967A26B0020AE3B /* aggregateattribute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834931001967A26B0020AE3B /* aggregateattribute.mm */; };
+		8384743D1985ADD5001B2844 /* CharacterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8384743C1985ADD5001B2844 /* CharacterTest.m */; };
+		83A0362A19970DCB00977426 /* itemslot.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A0362819970DCB00977426 /* itemslot.h */; };
+		83A0362B19970DCB00977426 /* itemslot.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83A0362919970DCB00977426 /* itemslot.mm */; };
+		83A0362E19970F2D00977426 /* itemslotcontainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A0362C19970F2D00977426 /* itemslotcontainer.h */; };
+		83A0362F19970F2D00977426 /* itemslotcontainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83A0362D19970F2D00977426 /* itemslotcontainer.mm */; };
+		83B12BE0197111E400C73961 /* aggregateattributeprotocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B12BDF197111E400C73961 /* aggregateattributeprotocol.h */; };
+		83B12BE31971138400C73961 /* healthaggregate.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B12BE11971138400C73961 /* healthaggregate.h */; };
+		83B12BE41971138400C73961 /* healthaggregate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83B12BE21971138400C73961 /* healthaggregate.mm */; };
+		83B12BE7197387D800C73961 /* experienceaggregate.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B12BE5197387D800C73961 /* experienceaggregate.h */; };
+		83B12BE8197387D800C73961 /* experienceaggregate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83B12BE6197387D800C73961 /* experienceaggregate.mm */; };
+		83D15BE41997D335008104C3 /* wearableconstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D15BE21997D335008104C3 /* wearableconstraint.h */; };
+		83D15BE51997D335008104C3 /* wearableconstraint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83D15BE31997D335008104C3 /* wearableconstraint.mm */; };
+		83D15BE81997D60E008104C3 /* headwearableconstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D15BE61997D60E008104C3 /* headwearableconstraint.h */; };
+		83D15BE91997D60E008104C3 /* headwearableconstraint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83D15BE71997D60E008104C3 /* headwearableconstraint.mm */; };
+		83D15BEE199802C0008104C3 /* constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D15BEC199802C0008104C3 /* constants.h */; };
+		83D15BEF199802C0008104C3 /* constants.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83D15BED199802C0008104C3 /* constants.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8349309F195CCF980020AE3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8349308A195CCF980020AE3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83493091195CCF980020AE3B;
+			remoteInfo = trogz.game.lib;
+		};
+		834930EE19671D8D0020AE3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8349308A195CCF980020AE3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83493091195CCF980020AE3B;
+			remoteInfo = trogz.game.lib;
+		};
+		834930F019671D8D0020AE3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8349308A195CCF980020AE3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83493091195CCF980020AE3B;
+			remoteInfo = trogz.game.lib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83493092195CCF980020AE3B /* libtrogz.game.lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtrogz.game.lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8349309D195CCF980020AE3B /* trogz.game.libTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trogz.game.libTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834930A3195CCF980020AE3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834930B2195CD0150020AE3B /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = SOURCE_ROOT; };
+		834930B3195CD0150020AE3B /* player.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = player.mm; sourceTree = SOURCE_ROOT; };
+		834930B6195CD2CA0020AE3B /* playercharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playercharacter.h; sourceTree = SOURCE_ROOT; };
+		834930B7195CD2CA0020AE3B /* playercharacter.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = playercharacter.mm; sourceTree = SOURCE_ROOT; };
+		834930BA195CDD890020AE3B /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = SOURCE_ROOT; };
+		834930BB195CDD890020AE3B /* game.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = game.mm; sourceTree = SOURCE_ROOT; };
+		834930BE195CDF9E0020AE3B /* ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ability.h; sourceTree = SOURCE_ROOT; };
+		834930BF195CDF9E0020AE3B /* ability.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ability.mm; sourceTree = SOURCE_ROOT; };
+		834930C2195CDFCA0020AE3B /* constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constraint.h; sourceTree = SOURCE_ROOT; };
+		834930C3195CDFCA0020AE3B /* constraint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = constraint.mm; sourceTree = SOURCE_ROOT; };
+		834930C61961D6F70020AE3B /* attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attribute.h; sourceTree = SOURCE_ROOT; };
+		834930C71961D6F70020AE3B /* attribute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = attribute.mm; sourceTree = SOURCE_ROOT; };
+		834930CA1961D7520020AE3B /* requirement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requirement.h; sourceTree = SOURCE_ROOT; };
+		834930CB1961D7520020AE3B /* requirement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = requirement.mm; sourceTree = SOURCE_ROOT; };
+		834930CE1961DD160020AE3B /* specializationattribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = specializationattribute.h; sourceTree = SOURCE_ROOT; };
+		834930CF1961DD160020AE3B /* specializationattribute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = specializationattribute.mm; sourceTree = SOURCE_ROOT; };
+		834930D21961E4E90020AE3B /* raceattribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = raceattribute.h; sourceTree = SOURCE_ROOT; };
+		834930D31961E4E90020AE3B /* raceattribute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = raceattribute.mm; sourceTree = SOURCE_ROOT; };
+		834930DA1961EBD70020AE3B /* levelattribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelattribute.h; sourceTree = SOURCE_ROOT; };
+		834930DB1961EBD70020AE3B /* levelattribute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = levelattribute.mm; sourceTree = SOURCE_ROOT; };
+		834930DE196259EF0020AE3B /* character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = character.h; sourceTree = SOURCE_ROOT; };
+		834930DF196259EF0020AE3B /* character.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = character.mm; sourceTree = SOURCE_ROOT; };
+		834930E21962605D0020AE3B /* nonplayercharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nonplayercharacter.h; sourceTree = SOURCE_ROOT; };
+		834930E31962605D0020AE3B /* nonplayercharacter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = nonplayercharacter.mm; sourceTree = SOURCE_ROOT; };
+		834930E619626A730020AE3B /* attributecollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attributecollection.h; sourceTree = SOURCE_ROOT; };
+		834930E719626A730020AE3B /* attributecollection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = attributecollection.mm; sourceTree = SOURCE_ROOT; };
+		834930EC19671BD40020AE3B /* AttributeCollectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeCollectionTest.m; sourceTree = "<group>"; };
+		834930F219671F280020AE3B /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		834930F419679CFE0020AE3B /* physicalattribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = physicalattribute.h; sourceTree = SOURCE_ROOT; };
+		834930F519679CFE0020AE3B /* physicalattribute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = physicalattribute.mm; sourceTree = SOURCE_ROOT; };
+		834930FF1967A26B0020AE3B /* aggregateattribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aggregateattribute.h; sourceTree = SOURCE_ROOT; };
+		834931001967A26B0020AE3B /* aggregateattribute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = aggregateattribute.mm; sourceTree = SOURCE_ROOT; };
+		8384743C1985ADD5001B2844 /* CharacterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTest.m; sourceTree = "<group>"; };
+		83A0362819970DCB00977426 /* itemslot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemslot.h; sourceTree = SOURCE_ROOT; };
+		83A0362919970DCB00977426 /* itemslot.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = itemslot.mm; sourceTree = SOURCE_ROOT; };
+		83A0362C19970F2D00977426 /* itemslotcontainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemslotcontainer.h; sourceTree = SOURCE_ROOT; };
+		83A0362D19970F2D00977426 /* itemslotcontainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = itemslotcontainer.mm; sourceTree = SOURCE_ROOT; };
+		83B12BDF197111E400C73961 /* aggregateattributeprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aggregateattributeprotocol.h; sourceTree = SOURCE_ROOT; };
+		83B12BE11971138400C73961 /* healthaggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = healthaggregate.h; sourceTree = SOURCE_ROOT; };
+		83B12BE21971138400C73961 /* healthaggregate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = healthaggregate.mm; sourceTree = SOURCE_ROOT; };
+		83B12BE5197387D800C73961 /* experienceaggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = experienceaggregate.h; sourceTree = SOURCE_ROOT; };
+		83B12BE6197387D800C73961 /* experienceaggregate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = experienceaggregate.mm; sourceTree = SOURCE_ROOT; };
+		83D15BE21997D335008104C3 /* wearableconstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wearableconstraint.h; sourceTree = SOURCE_ROOT; };
+		83D15BE31997D335008104C3 /* wearableconstraint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wearableconstraint.mm; sourceTree = SOURCE_ROOT; };
+		83D15BE61997D60E008104C3 /* headwearableconstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = headwearableconstraint.h; sourceTree = SOURCE_ROOT; };
+		83D15BE71997D60E008104C3 /* headwearableconstraint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = headwearableconstraint.mm; sourceTree = SOURCE_ROOT; };
+		83D15BEC199802C0008104C3 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = SOURCE_ROOT; };
+		83D15BED199802C0008104C3 /* constants.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = constants.mm; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8349308F195CCF980020AE3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8349309A195CCF980020AE3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834930F319671F280020AE3B /* libstdc++.dylib in Frameworks */,
+				8349309E195CCF980020AE3B /* libtrogz.game.lib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83493089195CCF980020AE3B = {
+			isa = PBXGroup;
+			children = (
+				834930F219671F280020AE3B /* libstdc++.dylib */,
+				83493094195CCF980020AE3B /* trogz.game.lib */,
+				834930A1195CCF980020AE3B /* trogz.game.libTests */,
+				83493093195CCF980020AE3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83493093195CCF980020AE3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83493092195CCF980020AE3B /* libtrogz.game.lib.a */,
+				8349309D195CCF980020AE3B /* trogz.game.libTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83493094195CCF980020AE3B /* trogz.game.lib */ = {
+			isa = PBXGroup;
+			children = (
+				83B12BDE1971118E00C73961 /* protocol */,
+				834930FC1967A1DC0020AE3B /* attribute */,
+				834930FE1967A2510020AE3B /* player */,
+				834930FD1967A2100020AE3B /* character */,
+				834930BA195CDD890020AE3B /* game.h */,
+				834930BB195CDD890020AE3B /* game.mm */,
+				83D15BEC199802C0008104C3 /* constants.h */,
+				83D15BED199802C0008104C3 /* constants.mm */,
+			);
+			path = trogz.game.lib;
+			sourceTree = "<group>";
+		};
+		834930A1195CCF980020AE3B /* trogz.game.libTests */ = {
+			isa = PBXGroup;
+			children = (
+				834930A2195CCF980020AE3B /* Supporting Files */,
+				834930EC19671BD40020AE3B /* AttributeCollectionTest.m */,
+				8384743C1985ADD5001B2844 /* CharacterTest.m */,
+			);
+			path = trogz.game.libTests;
+			sourceTree = "<group>";
+		};
+		834930A2195CCF980020AE3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834930A3195CCF980020AE3B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		834930FC1967A1DC0020AE3B /* attribute */ = {
+			isa = PBXGroup;
+			children = (
+				834930CE1961DD160020AE3B /* specializationattribute.h */,
+				834930CF1961DD160020AE3B /* specializationattribute.mm */,
+				834930C61961D6F70020AE3B /* attribute.h */,
+				834930C71961D6F70020AE3B /* attribute.mm */,
+				834930D21961E4E90020AE3B /* raceattribute.h */,
+				834930D31961E4E90020AE3B /* raceattribute.mm */,
+				834930DA1961EBD70020AE3B /* levelattribute.h */,
+				834930DB1961EBD70020AE3B /* levelattribute.mm */,
+				834930E619626A730020AE3B /* attributecollection.h */,
+				834930E719626A730020AE3B /* attributecollection.mm */,
+				834930F419679CFE0020AE3B /* physicalattribute.h */,
+				834930F519679CFE0020AE3B /* physicalattribute.mm */,
+				834930FF1967A26B0020AE3B /* aggregateattribute.h */,
+				834931001967A26B0020AE3B /* aggregateattribute.mm */,
+				83B12BE11971138400C73961 /* healthaggregate.h */,
+				83B12BE21971138400C73961 /* healthaggregate.mm */,
+				83B12BE5197387D800C73961 /* experienceaggregate.h */,
+				83B12BE6197387D800C73961 /* experienceaggregate.mm */,
+			);
+			name = attribute;
+			sourceTree = "<group>";
+		};
+		834930FD1967A2100020AE3B /* character */ = {
+			isa = PBXGroup;
+			children = (
+				83D15BE11997D0E5008104C3 /* constraints */,
+				834930BE195CDF9E0020AE3B /* ability.h */,
+				834930BF195CDF9E0020AE3B /* ability.mm */,
+				834930C2195CDFCA0020AE3B /* constraint.h */,
+				834930C3195CDFCA0020AE3B /* constraint.mm */,
+				834930CA1961D7520020AE3B /* requirement.h */,
+				834930CB1961D7520020AE3B /* requirement.mm */,
+				834930B6195CD2CA0020AE3B /* playercharacter.h */,
+				834930B7195CD2CA0020AE3B /* playercharacter.mm */,
+				834930DE196259EF0020AE3B /* character.h */,
+				834930DF196259EF0020AE3B /* character.mm */,
+				834930E21962605D0020AE3B /* nonplayercharacter.h */,
+				834930E31962605D0020AE3B /* nonplayercharacter.mm */,
+				83A0362819970DCB00977426 /* itemslot.h */,
+				83A0362919970DCB00977426 /* itemslot.mm */,
+				83A0362C19970F2D00977426 /* itemslotcontainer.h */,
+				83A0362D19970F2D00977426 /* itemslotcontainer.mm */,
+			);
+			name = character;
+			sourceTree = "<group>";
+		};
+		834930FE1967A2510020AE3B /* player */ = {
+			isa = PBXGroup;
+			children = (
+				834930B2195CD0150020AE3B /* player.h */,
+				834930B3195CD0150020AE3B /* player.mm */,
+			);
+			name = player;
+			sourceTree = "<group>";
+		};
+		83B12BDE1971118E00C73961 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				83B12BDF197111E400C73961 /* aggregateattributeprotocol.h */,
+			);
+			name = protocol;
+			sourceTree = "<group>";
+		};
+		83D15BE11997D0E5008104C3 /* constraints */ = {
+			isa = PBXGroup;
+			children = (
+				83D15BE21997D335008104C3 /* wearableconstraint.h */,
+				83D15BE31997D335008104C3 /* wearableconstraint.mm */,
+				83D15BE61997D60E008104C3 /* headwearableconstraint.h */,
+				83D15BE71997D60E008104C3 /* headwearableconstraint.mm */,
+			);
+			name = constraints;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83493090195CCF980020AE3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834930D01961DD160020AE3B /* specializationattribute.h in Headers */,
+				834930D41961E4E90020AE3B /* raceattribute.h in Headers */,
+				834930E819626A730020AE3B /* attributecollection.h in Headers */,
+				834930B4195CD0150020AE3B /* player.h in Headers */,
+				834930F619679CFE0020AE3B /* physicalattribute.h in Headers */,
+				83A0362E19970F2D00977426 /* itemslotcontainer.h in Headers */,
+				83D15BE81997D60E008104C3 /* headwearableconstraint.h in Headers */,
+				834930E41962605D0020AE3B /* nonplayercharacter.h in Headers */,
+				83B12BE7197387D800C73961 /* experienceaggregate.h in Headers */,
+				83A0362A19970DCB00977426 /* itemslot.h in Headers */,
+				834930C0195CDF9E0020AE3B /* ability.h in Headers */,
+				834931011967A26B0020AE3B /* aggregateattribute.h in Headers */,
+				834930CC1961D7520020AE3B /* requirement.h in Headers */,
+				834930BC195CDD890020AE3B /* game.h in Headers */,
+				834930E0196259EF0020AE3B /* character.h in Headers */,
+				834930DC1961EBD70020AE3B /* levelattribute.h in Headers */,
+				834930C4195CDFCA0020AE3B /* constraint.h in Headers */,
+				834930B8195CD2CA0020AE3B /* playercharacter.h in Headers */,
+				83B12BE31971138400C73961 /* healthaggregate.h in Headers */,
+				834930C81961D6F70020AE3B /* attribute.h in Headers */,
+				83B12BE0197111E400C73961 /* aggregateattributeprotocol.h in Headers */,
+				83D15BE41997D335008104C3 /* wearableconstraint.h in Headers */,
+				83D15BEE199802C0008104C3 /* constants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83493091195CCF980020AE3B /* trogz.game.lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834930A6195CCF980020AE3B /* Build configuration list for PBXNativeTarget "trogz.game.lib" */;
+			buildPhases = (
+				8349308E195CCF980020AE3B /* Sources */,
+				8349308F195CCF980020AE3B /* Frameworks */,
+				83493090195CCF980020AE3B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trogz.game.lib;
+			productName = trogz.game.lib;
+			productReference = 83493092195CCF980020AE3B /* libtrogz.game.lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8349309C195CCF980020AE3B /* trogz.game.libTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834930A9195CCF980020AE3B /* Build configuration list for PBXNativeTarget "trogz.game.libTests" */;
+			buildPhases = (
+				83493099195CCF980020AE3B /* Sources */,
+				8349309A195CCF980020AE3B /* Frameworks */,
+				8349309B195CCF980020AE3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834930A0195CCF980020AE3B /* PBXTargetDependency */,
+				834930EF19671D8D0020AE3B /* PBXTargetDependency */,
+				834930F119671D8D0020AE3B /* PBXTargetDependency */,
+			);
+			name = trogz.game.libTests;
+			productName = trogz.game.libTests;
+			productReference = 8349309D195CCF980020AE3B /* trogz.game.libTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8349308A195CCF980020AE3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Alek Mitrevski";
+				TargetAttributes = {
+					83493091195CCF980020AE3B = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					8349309C195CCF980020AE3B = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 83493091195CCF980020AE3B;
+					};
+				};
+			};
+			buildConfigurationList = 8349308D195CCF980020AE3B /* Build configuration list for PBXProject "trogz.game.lib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83493089195CCF980020AE3B;
+			productRefGroup = 83493093195CCF980020AE3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83493091195CCF980020AE3B /* trogz.game.lib */,
+				8349309C195CCF980020AE3B /* trogz.game.libTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8349309B195CCF980020AE3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8349308E195CCF980020AE3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834930B9195CD2CA0020AE3B /* playercharacter.mm in Sources */,
+				834930DD1961EBD70020AE3B /* levelattribute.mm in Sources */,
+				834931021967A26B0020AE3B /* aggregateattribute.mm in Sources */,
+				834930E919626A730020AE3B /* attributecollection.mm in Sources */,
+				83A0362B19970DCB00977426 /* itemslot.mm in Sources */,
+				83D15BEF199802C0008104C3 /* constants.mm in Sources */,
+				834930D51961E4E90020AE3B /* raceattribute.mm in Sources */,
+				834930B5195CD0150020AE3B /* player.mm in Sources */,
+				834930F719679CFE0020AE3B /* physicalattribute.mm in Sources */,
+				834930E51962605D0020AE3B /* nonplayercharacter.mm in Sources */,
+				834930C91961D6F70020AE3B /* attribute.mm in Sources */,
+				83A0362F19970F2D00977426 /* itemslotcontainer.mm in Sources */,
+				83D15BE51997D335008104C3 /* wearableconstraint.mm in Sources */,
+				83B12BE41971138400C73961 /* healthaggregate.mm in Sources */,
+				834930CD1961D7520020AE3B /* requirement.mm in Sources */,
+				83D15BE91997D60E008104C3 /* headwearableconstraint.mm in Sources */,
+				834930C1195CDF9E0020AE3B /* ability.mm in Sources */,
+				834930D11961DD160020AE3B /* specializationattribute.mm in Sources */,
+				834930C5195CDFCA0020AE3B /* constraint.mm in Sources */,
+				834930BD195CDD890020AE3B /* game.mm in Sources */,
+				834930E1196259EF0020AE3B /* character.mm in Sources */,
+				83B12BE8197387D800C73961 /* experienceaggregate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83493099195CCF980020AE3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834930ED19671BD40020AE3B /* AttributeCollectionTest.m in Sources */,
+				8384743D1985ADD5001B2844 /* CharacterTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		834930A0195CCF980020AE3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83493091195CCF980020AE3B /* trogz.game.lib */;
+			targetProxy = 8349309F195CCF980020AE3B /* PBXContainerItemProxy */;
+		};
+		834930EF19671D8D0020AE3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83493091195CCF980020AE3B /* trogz.game.lib */;
+			targetProxy = 834930EE19671D8D0020AE3B /* PBXContainerItemProxy */;
+		};
+		834930F119671D8D0020AE3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83493091195CCF980020AE3B /* trogz.game.lib */;
+			targetProxy = 834930F019671D8D0020AE3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		834930A4195CCF980020AE3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		834930A5195CCF980020AE3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		834930A7195CCF980020AE3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		834930A8195CCF980020AE3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		834930AA195CCF980020AE3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = trogz.game.libTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		834930AB195CCF980020AE3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = trogz.game.libTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8349308D195CCF980020AE3B /* Build configuration list for PBXProject "trogz.game.lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834930A4195CCF980020AE3B /* Debug */,
+				834930A5195CCF980020AE3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834930A6195CCF980020AE3B /* Build configuration list for PBXNativeTarget "trogz.game.lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834930A7195CCF980020AE3B /* Debug */,
+				834930A8195CCF980020AE3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834930A9195CCF980020AE3B /* Build configuration list for PBXNativeTarget "trogz.game.libTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834930AA195CCF980020AE3B /* Debug */,
+				834930AB195CCF980020AE3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8349308A195CCF980020AE3B /* Project object */;
+}
