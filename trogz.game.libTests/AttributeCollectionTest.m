@@ -26,11 +26,6 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
 -(void)testAddAttributeToCollection {
     Attribute* a = [[Attribute alloc] init:@"test" Name:@"test1" SkillLevel:1];
     Attribute* b = [[Attribute alloc] init:@"test" Name:@"test1" SkillLevel:50];

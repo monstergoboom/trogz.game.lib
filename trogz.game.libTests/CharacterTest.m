@@ -28,10 +28,11 @@
 }
 
 - (void)testCharacterCreation {
-    SpecializationAttribute* brawler = [[SpecializationAttribute alloc] init:"brawler"];
-    SpecializationAttribute* charmer = [[SpecializationAttribute alloc] init:"charmer"];
+    SpecializationAttribute* brawler = [[SpecializationAttribute alloc] init:@"brawler"];
+    SpecializationAttribute* charmer = [[SpecializationAttribute alloc] init:@"charmer"];
+    Player* player = [[Player alloc] init];
     
-    PlayerCharacter* c = [[PlayerCharacter alloc] init:@"player1" Race:@"troll" Level:1 Primary:brawler Secondary:charmer];
+    PlayerCharacter* c = [[PlayerCharacter alloc] init: player];
 }
 
 @end
